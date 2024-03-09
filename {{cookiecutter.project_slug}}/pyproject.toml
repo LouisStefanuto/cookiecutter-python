@@ -1,18 +1,28 @@
 [tool.poetry]
-name = "{{ cookiecutter.project_slug }}"
+name = "the_awesome_project"
 version = "0.1.0"
-authors = ["{{ cookiecutter.full_name }} <{{ cookiecutter.email }}>"]
-description = "{{ cookiecutter.project_description }}"
+authors = ["FirstName Name <me@email.com>"]
+description = ""
 readme = "README.md"
-packages = [{include = "{{ cookiecutter.project_slug }}"}]
+packages = [{include = "the_awesome_project"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 torch = "^2.2.1"
 numpy = "^1.26.4"
+pydantic = "^2.6.3"
+typer = "^0.9.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.1.1"
+black = "^24.2.0"
+isort = "^5.13.2"
+pre-commit = "^3.6.2"
+pytest-cov = "^4.1.0"
+
+
+[tool.poetry.group.doc.dependencies]
+mkdocs = "^1.5.3"
 
 [build-system]
 requires = ["poetry-core"]

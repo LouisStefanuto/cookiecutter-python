@@ -2,6 +2,22 @@
 
 This Cookie Cutter template provides a standardized structure for creating Python packages. It's designed to streamline the initial setup process and promote best practices for package development.
 
+## 🤖 Features
+
+- Data validation with [Pydantic](https://docs.pydantic.dev/latest/)
+- Documentation with [mkdocs](https://www.mkdocs.org) with [Material theme](https://squidfunk.github.io/mkdocs-material/)
+- Test with [pytest](https://docs.pytest.org/en/8.0.x/)
+- Coverage control with [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/)
+- CI/CD with Github Workflows, includes default actions for building, testing, publishing the package.
+- CLI with [Typer](https://typer.tiangolo.com)
+
+Optional dev tools:
+
+- Code Formatting with [Black formatter](https://black.readthedocs.io/en/stable/)
+- Dependencies and import cleaning with [isort](https://pycqa.github.io/isort/)
+
+The template supports Python 3.11.
+
 ## 🧪 Requirements
 
 - Python 3.11 or higher
