@@ -1,6 +1,6 @@
 # Cookiecutter Template for Python Package
 
-This Cookie Cutter template provides a standardized structure for creating Python packages. It's designed to streamline the initial setup process and promote best practices for package development.
+This Cookiecutter template provides a standardized structure for creating Python packages. It's designed to streamline the initial setup process and promote best practices for package development.
 
 ## 🤖 Features
 
