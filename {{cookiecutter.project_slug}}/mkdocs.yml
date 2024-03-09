@@ -1,0 +1,54 @@
+site_name: {{ cookiecutter.project_name }}
+site_description: Official documentation of {{ cookiecutter.project_name }}
+
+# Repository
+repo_name: Github
+repo_url: {{ cookiecutter.url_repo }}
+
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    primary: {{ cookiecutter.site_color }}
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: {{ cookiecutter.url_repo }}
+
+markdown_extensions:
+  # nested boxes
+  - pymdownx.superfences
+  # colored boxes to highlight key points
+  - admonition
+  # make colored boxes collapsible
+  - pymdownx.details
+  # for menu fancy grid-organized boxes
+  - attr_list
+  - md_in_html
+  # emojis from Material
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+{%- if cookiecutter.use_latex_in_mkdocs -%}
+  # to add LateX
+  - pymdownx.arithmatex:
+      generic: true
+{% endif %}
+
+
+{%- if cookiecutter.use_latex_in_mkdocs -%}
+extra_javascript:
+  # to add LateX
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+{% endif %}
+
+# Page tree
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Get started: get_started.md

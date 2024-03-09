@@ -1,0 +1,11 @@
+{
+    "full_name": "FirstName Name",
+    "email": "me@email.com",
+    "project_name": "The awesome project",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_description": "",
+    "site_color": "indigo",
+    "url_repo": "https://github.com/user/repo",
+    "use_latex_in_mkdocs": false
+  }
+  
