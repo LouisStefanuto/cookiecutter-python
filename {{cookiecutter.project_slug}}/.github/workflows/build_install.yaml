@@ -8,7 +8,7 @@ jobs:
       matrix:
         python-version: ["3.11"]
         os: [ubuntu-latest]
-    runs-on: ${{ matrix.os }}
+    runs-on: ${{ '{{' }} matrix.os {{ '}}' }}
 
     steps:
     - name: 👾 Clone repo to runner
@@ -17,7 +17,7 @@ jobs:
     - name: 🐍 Install python
       uses: actions/setup-python@v5
       with:
-        python-version: ${{ matrix.python-version }}
+        python-version: ${{ '{{' }} matrix.python-version {{ '}}' }}
     
     - name: 🏗️ Install Poetry
       run: pip install poetry
