@@ -4,12 +4,12 @@ This Cookiecutter template provides a standardized structure for creating Python
 
 ## 🤖 Features
 
-- Data validation with [Pydantic](https://docs.pydantic.dev/latest/)
+- Standard repo structure
 - Documentation with [mkdocs](https://www.mkdocs.org) with [Material theme](https://squidfunk.github.io/mkdocs-material/)
 - Test with [pytest](https://docs.pytest.org/en/8.0.x/)
 - Coverage control with [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/)
 - CI/CD with Github Workflows, includes default actions for building, testing, publishing the package.
-- CLI with [Typer](https://typer.tiangolo.com)
+- CLI example with [Typer](https://typer.tiangolo.com)
 
 Optional dev tools:
 
