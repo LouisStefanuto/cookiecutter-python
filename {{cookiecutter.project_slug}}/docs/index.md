@@ -1,4 +1,4 @@
-# Welcome to {{cookiecutter.project_name}}'s official documentation
+# {{cookiecutter.project_name}}
 
 ## Motivation
 

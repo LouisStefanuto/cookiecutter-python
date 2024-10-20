@@ -6,7 +6,7 @@ jobs:
   build_and_install:
     strategy:
       matrix:
-        python-version: ["3.11"]
+        python-version: ["3.12"]
         os: [ubuntu-latest]
     runs-on: ${{ '{{' }} matrix.os {{ '}}' }}
 
@@ -18,7 +18,7 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: ${{ '{{' }} matrix.python-version {{ '}}' }}
-    
+
     - name: 🏗️ Install Poetry
       run: pip install poetry
 

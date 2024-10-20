@@ -16,11 +16,11 @@ Optional dev tools:
 - Code Formatting with [Black formatter](https://black.readthedocs.io/en/stable/)
 - Dependencies and import cleaning with [isort](https://pycqa.github.io/isort/)
 
-The template supports Python 3.11.
+The template supports Python 3.12.
 
 ## 🧪 Requirements
 
-- Python 3.11 or higher
+- Python 3.12 or higher
 - Cookiecutter
 
 ## 👾 Usage
