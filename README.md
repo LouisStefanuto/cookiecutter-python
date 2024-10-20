@@ -10,6 +10,7 @@ This Cookiecutter template provides a standardized structure for creating Python
 - Coverage control with [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/)
 - CI/CD with Github Workflows, includes default actions for building, testing, publishing the package.
 - CLI example with [Typer](https://typer.tiangolo.com)
+- Code quality checks with [Pre-commit](https://pre-commit.com)
 
 Optional dev tools:
 
